@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Tweet } from '../tweet'
+import { Tweet } from '../tweet';
+import { TWEETS } from '../mock-tweets';
 
 @Component({
   selector: 'app-tweets',
@@ -7,11 +8,7 @@ import { Tweet } from '../tweet'
   styleUrls: ['./tweets.component.css']
 })
 export class TweetsComponent implements OnInit {
-  tweet: Tweet = {
-    id: 1,
-    author: 'votoms',
-    tweet: 'Hello,World!'
-  }
+  tweets = TWEETS;
 
   constructor() { }
 

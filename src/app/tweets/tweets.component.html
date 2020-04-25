@@ -1,4 +1,7 @@
-<p>tweets works!</p>
-<p>id: {{tweet.id}}</p>
-<p>author: {{tweet.author}}</p>
-<p>tweet: {{tweet.tweet}}</p>
+<h2>tweets list</h2>
+<ul class="tweets">
+  <li *ngFor="let tweet of tweets">
+    <span class="badge">{{tweet.id}}:</span>{{tweet.author}}<br>
+    {{tweet.tweet}}
+  </li>
+</ul>
