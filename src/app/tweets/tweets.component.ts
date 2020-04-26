@@ -18,7 +18,8 @@ export class TweetsComponent implements OnInit {
   }
 
   getTweets(): void {
-    this.tweetService.getTweets().subscribe(tweets => this.tweets = tweets);
+    // this.tweetService.getTweets().subscribe(tweets => this.tweets = tweets);
+    this.tweetService.getTweets().subscribe(tweets => console.log(tweets));
   }
 
 }
